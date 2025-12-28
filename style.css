@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #c7b7ff;
+  color: #e5e7eb;
+}
+
+.header {
+  background-color: #3f0069;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  background-color: #433e88;
+  padding: 28px;
+  border-radius: 12px;
+  width: 500px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+button {
+  flex: 1;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.alt-bg {
+  background-color: #280686;
+}
