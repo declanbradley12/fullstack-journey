@@ -50,3 +50,51 @@ input {
   border: none;
   font-size: 16px;
 }
+
+.label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.meta {
+  margin-top: -6px;
+  opacity: 0.85;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 231, 235, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(229, 231, 235, 0.35);
+}
+
+.output {
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  min-height: 20px;
+}
+
+button {
+  border: 1px solid rgba(229, 231, 235, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  border-radius: 10px;
+  transition: transform 0.05s ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
