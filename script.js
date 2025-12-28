@@ -1,7 +1,26 @@
+// Grab elements from the page
 const output = document.getElementById("output");
 const clickMeBtn = document.getElementById("clickMe");
 const bgButton = document.getElementById("bgToggle");
+const nameInput = document.getElementById("nameInput");
 
+// State
+let clickCount = 0;
+
+// Click button logic
+clickMeBtn.addEventListener("click", () => {
+  clickCount++;
+
+  const name = nameInput.value;
+
+  if (name === "") {
+    output.textContent = `Please enter your name. Button clicked ${clickCount} times.`;
+  } else {
+    output.textContent = `Hello ${name} — button clicked ${clickCount} times.`;
+  }
+});
+
+// Background toggle
 bgButton.addEventListener("click", () => {
   document.body.classList.toggle("alt-bg");
 
@@ -10,13 +29,4 @@ bgButton.addEventListener("click", () => {
   } else {
     bgButton.textContent = "Dark Mode";
   }
-});
-let clickCount = 0;
-
-clickMeBtn.addEventListener("click", () => {
-  clickCount++;
- output.textContent =
-  clickCount === 1
-    ? "Button clicked 1 time"
-    : `Button clicked ${clickCount} times`;
 });
